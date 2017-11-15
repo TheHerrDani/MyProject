@@ -1,0 +1,65 @@
+th>div {
+display: inline-block;
+	
+}
+th>div:hover{
+	cursor: default;
+}
+
+#headerimage{
+	width: 10%;
+}
+
+/*header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	}*/
+
+table{
+	width: 90%;
+}
+
+img{
+	width: 100%;
+}
+
+header, footer, thead, td{
+	font-family: 'Assistant', sans-serif;
+}
+
+td{
+	font-size: 20px;
+}
+
+/*th{
+	display: inline;*/
+}
+#th1{
+	width:5%;
+}
+
+#th3{
+	width: 10%;
+}
+
+#th4{
+	width:7%;
+}
+
+#th5{
+	width: 5%;
+}
+
+#th8{
+	width:3%;
+}
+
+#th10{
+	width: 10%;
+}
+
+#th11{
+	width:6%;
+}

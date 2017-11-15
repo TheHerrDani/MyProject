@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Római szám átváltó</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+	
+		<h1>Calculator</h1>
+
+		<h2>Warning input boundaries are:1-39999!</h2>
+	
+		<form>
+			<div id="artoro">
+			<label for="type">Arab to Roman</label>
+			<input type="radio" name="type" id="arabic" onclick="radioonclick1();">
+			</div>
+			<div id="rotoar">
+			<label for="type">Roman to Arabic</label>
+			<input type="radio" name="type" id="roman" onclick="radioonclick2();">
+	
+		</form>
+
+
+
+	<div id="table" hidden="true">
+		<table  align="center" class="table">
+	 	<thead id="head">
+	 		<tr>
+	 			<th colspan="3">
+	 				
+	 				<div id=display>
+					</div>
+				</th>	
+			</tr>
+	 	</thead>
+	 	<tfoot>
+	 		<tr>
+	 			<td colspan="3">
+	 				<button type="button" onclick="szamits();">Do It!</button>
+	 			</td>
+	 		</tr>	
+	 	</tfoot>
+	 	<tbody >
+	 		<tr onclick="clicking();" id=tr1>
+	 			<td><button type="button">7</button></td>
+	 			<td><button type="button">8</button></td>
+		 		<td><button type="button">9</button></td>
+		 	</tr>
+	 		<tr onclick="clicking();" id=tr1>
+	 			<td><button type="button">4</button></td>
+		 		<td><button type="button">5</button></td>
+		 		<td><button type="button">6</button></td>
+	 		</tr>
+	 		<tr onclick="clicking();" id=tr1>
+	 			<td><button type="button">1</button></td>
+	 			<td><button type="button">2</button></td>
+	 			<td><button type="button">3</button></td>
+	 		</tr>
+	  		<tr id=tr4>
+	 			<td onclick="clickingNull();"><button type="button">0</button></td>
+	 			<td><button type="button" onclick="Delete();">Del</button></td>
+	 			<td><button type="button" onclick="DeleteAll();">Del All</button></td>
+	 		</tr>	
+		 </tbody>
+		</table>
+	</div>
+
+
+	<div id="table2" hidden="true">
+		<table  align="center" class="table2">
+	 	<thead id="head">
+	 		<tr>
+	 			<th colspan="3">
+	 				
+	 				<div id=display2>
+					</div>
+				</th>	
+			</tr>
+	 	</thead>
+	 	<tfoot>
+	 		<tr>
+	 			<td colspan="3">
+	 				<button type="button" onclick="szamits();">Do It!</button>
+	 			</td>
+	 		</tr>	
+	 	</tfoot>
+	 	<tbody >
+	 		<tr onclick="clickingChar();" id=tr1>
+	 			<td><button type="button">M</button></td>
+	 			<td><button type="button">ↁ</button></td>
+		 		<td><button type="button">ↂ</button></td>
+		 	</tr>
+	 		<tr onclick="clickingChar();" id=tr1>
+	 			<td><button type="button">L</button></td>
+		 		<td><button type="button">C</button></td>
+		 		<td><button type="button">D</button></td>
+	 		</tr>
+	 		<tr onclick="clickingChar();" id=tr1>
+	 			<td><button type="button">I</button></td>
+	 			<td><button type="button">V</button></td>
+	 			<td><button type="button">X</button></td>
+	 		</tr>
+	  		<tr id=tr4>
+	 			<td onclick="clickingEmpty();"><button type="button">42</button></td>
+	 			<td><button type="button" onclick="Delete();">Del</button></td>
+	 			<td><button type="button" onclick="DeleteAll();">Del All</button></td>
+	 		</tr>	
+		 </tbody>
+		</table>
+
+
+	</div>	
+	<script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
+

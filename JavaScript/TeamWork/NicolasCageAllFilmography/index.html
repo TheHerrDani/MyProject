@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <title>NicCageMovies</title>
+       <link rel="stylesheet" type="text/css" href="CSS.css">
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+    </head>
+    <header class="w3-container w3-padding-large w3-black w3-center ">
+        <img id="headerimage" src="Images/NicCage.png">
+        </header>
+    <body onload="szuro()" class="w3-black">
+        <div>
+            <br>
+            <table id="keressArraTable" class="w3-table w3-white w3-hoverable w3-bordered">
+                <thead class="w3-teal">
+                <tr>
+                    <!--...-->
+                    <th id="th1"><input type="checkbox" name="checkbox1" id="unit" onclick="szuro();" checked>Unit<br><div onclick="sortByUnit1();" id="fel">&#9650;</div> <div onclick="sortByUnit2();" id="le">&#9660;</div></th>
+                    <th id="th2"><input type="checkbox" name="checkbox2" id="ShowID" onclick="szuro();" checked>Show ID<br><div onclick="sortByID1();" id="fel">&#9650;</div> <div onclick="sortByID2();" id="le">&#9660;</div></th>
+                    <th id="th3"><input type="checkbox" name="checkbox3" id="ShowTitle" onclick="szuro();" checked>Show title<br><div onclick="sortByShow_title1();" id="fel">&#9650;</div> <div onclick="sortByShow_title2();" id="le">&#9660;</div></th>
+                    <th id="th4"><input type="checkbox" name="checkbox4" id="ReleaseYear" onclick="szuro();" checked>Release year<br><div onclick="sortByReleaseYear1();" id="fel">&#9650;</div> <div onclick="sortByReleaseYear2();" id="le">&#9660;</div></th>
+                    <th id="th5"><input type="checkbox" name="checkbox5" id="Rating" onclick="szuro();" checked>Rating<br><div onclick="sortByRating1();" id="fel">&#9650;</div> <div onclick="sortByRating2();" id="le">&#9660;</div></th>
+                    <th id="th6"><input type="checkbox" name="checkbox6" id="Category" onclick="szuro();" checked>Category<br><div onclick="sortByCategory1();" id="fel">&#9650;</div> <div onclick="sortByCategory2();" id="le">&#9660;</div></th>
+                    <th id="th7"><input type="checkbox" name="checkbox7" id="ShowCast" onclick="szuro();" checked>Show cast<br></th>
+                    <th id="th8"><input type="checkbox" name="checkbox8" id="Director" onclick="szuro();" checked>Director<br><div onclick="sortByDirector1();" id="fel">&#9650;</div> <div onclick="sortByDirector2()();" id="le">&#9660;</div></th>
+                    <th id="th9"><input type="checkbox" name="checkbox9" id="Summary" onclick="szuro();" checked>Summary</th>
+                    <th id="th10"><input type="checkbox" name="checkbox10" id="Poster" onclick="szuro();" checked>Poster </th>
+                    <th id="th11"><input type="checkbox" name="checkbox11" id="runtime" onclick="szuro();" checked>Runtime<br><div onclick="sortByRuntime1();" id="fel">&#9650;</div> <div onclick="sortByRuntime2();" id="le">&#9660;</div></th>
+                    
+                </tr>
+                </thead>
+                <tbody id="tbody">
+                   
+                    
+                </tbody>
+            </table>
+
+        </div>
+        <footer class="w3-container w3-win-phone-steel w3-right-align">
+            <p>&copy;GIT Egylet</p>
+        </footer>
+        <script type="text/javascript" src="oszetettKereso.js"></script>
+        <script type="text/javascript" src="Caged.js"></script>
+        <script type="text/javascript" src="sort.js"></script>
+    </body>
+
+</html>
+
