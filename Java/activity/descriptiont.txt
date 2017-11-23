@@ -1,0 +1,1 @@
+In this project I build an activity tracker, it can calculate distance and elevation from trackpoionts. A trackpoint contains coordinates and elevate data.
